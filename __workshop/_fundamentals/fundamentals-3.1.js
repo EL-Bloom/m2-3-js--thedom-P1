@@ -7,9 +7,11 @@
 //
 // - If it's an empty string (''), return undefined.
 
-function firstLetter(str) {
-  // Your code here
-}
+function firstLetter(str) { 
+   return str.charAt(0) === "" ? undefined : str.charAt(0);
+  
+};
+console.log(firstLetter(""));
 
 // Part 2 - Test
 // --------------

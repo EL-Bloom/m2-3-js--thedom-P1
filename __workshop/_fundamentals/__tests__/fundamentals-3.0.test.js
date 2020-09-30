@@ -1,7 +1,17 @@
 // We import (require) the function that we want to test.
 const strLength = require("../fundamentals-3.0");
 
-// Write 3 more expect functions to test the function you just wrote.
+// Write 3 more expect functions to test the function you just wrote. 
+
+
+function strLength(str) {
+  
+  if (typeof str !== "string" || str.length === 0) {
+    return undefined;
+  }
+  return str.length;
+}  
+console.log(strLength("max")).toBe(3);
 test("Exercise 0", function () {
   expect(strLength("max")).toBe(3);
   // add more tests here...

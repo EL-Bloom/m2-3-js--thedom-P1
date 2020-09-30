@@ -8,7 +8,7 @@
 // - If it's not a string, return undefined.
 
 function strLength(str) {
-  // Your code here
+  
   if (typeof str !== "string" || str.length === 0) {
     return undefined;
   }
