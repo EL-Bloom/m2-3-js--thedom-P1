@@ -10,8 +10,13 @@
 // - If there is no letter in the provided index, return undefined.
 
 function getLetterAtIndex(str, index) {
-  // Your code here
-}
+  if (typeof str !==  "string" ||  
+      str[2] === "number") { 
+        return undefined;
+      } 
+      return str.charAt(index);
+} 
+console.log(getLetterAtIndex("bacon", 2));
 
 // Part 2 - Test
 // --------------

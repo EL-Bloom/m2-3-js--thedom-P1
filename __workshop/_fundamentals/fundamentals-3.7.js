@@ -11,9 +11,26 @@
 //
 // example: repeat(['foo', 3]) returns 'foofoofoo'
 
-function repeat(arr) {
-  // Your code here
+ 
+
+const repeat = function (arr) { 
+  const sentenceString = arr[0]; 
+  const count = arr[1]; 
+
+  if (typeof sentenceString !== "string" || typeof count !== "number") { 
+    return undefined;
+  }  
+  if ( count < 0) { 
+    return "" 
+  }
+  let multiply = "" 
+  for (let i = 0; i < count; i++) { 
+    multiply = multiply + sentenceString;
+  }
+
+return multiply; 
 }
+console.log(repeat(["go",3]));  
 
 // Part 2 - Test
 // --------------
@@ -23,3 +40,7 @@ function repeat(arr) {
 
 // We need to export the function in order for our unit test to have access to it.
 module.exports = repeat;
+
+
+
+

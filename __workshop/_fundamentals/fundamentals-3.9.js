@@ -14,8 +14,30 @@
 //  - You'll need to use the split string method
 //  - `forEach` might be helpful
 
-function longestWord(str) {
-  // Place solution here
+function longestWord(sentence) {
+  let splitString = sentence.split(" "); 
+  let longest = 0; 
+  let word;  
+  if (sentence === "") { 
+    return "";
+  } 
+
+   
+  splitString.forEach(function(splitString) { 
+    if (longest < splitString.length) { 
+      longest = splitString.length; 
+      word= splitString; 
+      if (word.length === word.length) { 
+        // how do verify if two elements are the same length and how do I choose the last one, which isn't necessarily the last one in the array?
+         
+      }
+    }  
+
+
+      
+    
+  }); 
+  return word;
 }
 
 // Part 2 - Test

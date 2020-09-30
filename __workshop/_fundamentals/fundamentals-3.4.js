@@ -7,9 +7,16 @@
 //
 // - If the array contains any values that are not a number, the function should return undefined.
 
+
 function sum(arr) {
-  // Your code here
-}
+  if (arr.length !== 2 ||
+  typeof arr[0] !== "number" || 
+  typeof arr[1] !== "number") { 
+    return undefined;
+  } 
+  return arr[0] + arr[1];
+} 
+console.log(sum([2,4]));
 
 // Part 2 - Test
 // --------------

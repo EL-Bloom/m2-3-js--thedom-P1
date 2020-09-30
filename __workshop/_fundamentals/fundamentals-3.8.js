@@ -5,9 +5,15 @@
 // Write a function that accepts a string and returns the string, reversed.
 // For example "hello" would return "olleh" and "how are you" would return "uoy era woh".
 
-function reverseIt(str) {
-  // Your code here
-}
+function reverseIt(str) { 
+ 
+  const separate = str.split(""); 
+  const reverse = separate.reverse(); 
+  const backWards = reverse.join(""); 
+  
+  return backWards;
+} 
+console.log(reverseIt("hello world"));
 
 // Part 2 - Test
 // --------------

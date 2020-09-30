@@ -9,19 +9,12 @@
 // - If it's a number, return `undefined`
 
 function lastCharacter(str) {
-    if (str === "") { 
-    return "undefined";
-  }   
-  // else if (str === typeOf 'number') { 
-  //   return "undefined";
-  // }
-  // else { 
-  //   return str.charAt(str.length-1);
-  // }
 
+  if (typeof str !== "string" || str.slice(-1) === "") return undefined;
+  return str.slice(-1);
+};
 
-
- console.log(lastCharacter(""));
+console.log(lastCharacter("fffg"));
 
 // Part 2 - Test
 // --------------

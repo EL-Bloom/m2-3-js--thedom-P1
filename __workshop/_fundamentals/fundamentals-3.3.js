@@ -10,10 +10,14 @@
 // HINT: You can use the typeof function to check the type of each element:
 // `typeof 3` returns 'number'
 
-function sum(arr) {
-  // Your code here
+function sum(arr) { 
+  
+    if (arr !== "number") { 
+      return undefined;
+    } 
+    return arr;
 }
-
+console.log(sum(4))
 // Part 2 - Test
 // --------------
 // Test your function.

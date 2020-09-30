@@ -8,8 +8,10 @@
 // e.g. f("BACON BROCOLI"); // Bacon Brocoli
 
 function makeIntoTitle(sentence) {
-  // Your code here
-}
+  let capitalize = sentence.toUpperCase(); 
+  return capitalize;
+}  
+console.log(makeIntoTitle("Hello you"));
 
 // Part 2 - Test
 // --------------

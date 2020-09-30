@@ -18,8 +18,30 @@
 // calculator(["add", 10, 20]); // 30
 
 function calculator(arr) {
-  // Your code here
-}
+  if (typeof arr[0] === 'number') { 
+       if (arr[0] === 1) {
+     console.log(arr[1] + arr[2]); 
+     }
+     else if (arr[0] === 2){ 
+       console.log(arr[1] - arr[2]); 
+     }
+      else if (arr[0] === 3){ 
+      console.log(arr[1] * arr[2]);  
+      }
+     else if (arr[0] === 4){
+      console.log(arr[1] / arr[2]);  
+     }
+  
+  } 
+  else {
+
+    
+     console.log("undefined");
+  }
+  
+  
+} 
+console.log(calculator([1,45,3]));
 
 // Part 2 - Test
 // --------------
